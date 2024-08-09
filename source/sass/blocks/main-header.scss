@@ -1,0 +1,13 @@
+.main-header {
+  min-height: 65px;
+  padding: 13px 0 14px;
+
+  &--fixed {
+    position: fixed;
+  }
+}
+
+.main-header-container {
+  display: flex;
+}
+
