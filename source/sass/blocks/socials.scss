@@ -1,0 +1,28 @@
+.socials {
+  &__list {
+    @include list-reset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 132px;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    min-width: 28px;
+    min-height: 22px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+
+
+}

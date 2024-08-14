@@ -9,8 +9,8 @@
   align-items: $align;
 }
 
-@mixin flex-container($display:flex, $align-items:center, $justify-content:center) {
-  display: $display;
+@mixin flex-container($align-items:center, $justify-content:center) {
+  display: flex;
   align-items: $align-items;
   justify-content: $justify-content;
 }

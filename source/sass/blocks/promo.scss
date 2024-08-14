@@ -1,14 +1,14 @@
 .promo {
+  background: linear-gradient($background-color-secondary-opacity 0 61%, $background-color-primary 61% 100%), url("../img/index-promo-bg-mobile.png");
+  background-color: $background-color-secondary;
+  background-repeat: no-repeat;
+  background-position: center, top center;
+  background-size: cover, contain;
   &__wrapper {
     @include flex-column-align;
     padding-top: 27px;
     padding-bottom: 20px;
     margin-top: 65px;
-    background: linear-gradient(to bottom, $background-color-secondary-opacity 63%, $background-color-primary 37%), url("../img/index-promo-bg.png");
-    background-color: $background-color-secondary;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover, contain;
   }
 
   &__title {

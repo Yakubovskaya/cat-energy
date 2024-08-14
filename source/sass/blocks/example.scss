@@ -15,7 +15,7 @@
   }
 
   &__list {
-    @include flex-container(flex, center, space-between);
+    @include flex-container(center, space-between);
     width: 280px;
     margin-bottom: 34px;
   }
