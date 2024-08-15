@@ -22,3 +22,9 @@
 @mixin link-reset {
   text-decoration: none;
 }
+
+@mixin button-reset {
+  border: 0;
+  border-color: transparent;
+  text-decoration: none;
+}

@@ -1,1 +1,24 @@
+.products {
+  padding-top: 27px;
 
+  &__title {
+    margin-bottom: 41px;
+  }
+
+  &__list {
+    @include list-reset;
+    @include flex-column;
+  }
+
+  &__item {
+    border-bottom: 1px solid $background-color-product-line;
+  }
+
+  &__button {
+    grid-column: span 2;
+  }
+}
+
+.products__item:first-child {
+  border-top: 1px solid $background-color-product-line;
+}
