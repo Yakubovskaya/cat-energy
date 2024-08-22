@@ -1,6 +1,7 @@
 .location {
-  background-color: $background-color-primary;
-
+  &--index {
+    background-color: $background-color-primary;
+  }
   &__text {
     display: flex;
     justify-content: space-between;

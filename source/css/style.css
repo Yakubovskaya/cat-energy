@@ -89,6 +89,10 @@ img {
   color: #ffffff;
   cursor: pointer;
 }
+.button--secondary {
+  color: #444444;
+  background-color: #f2f2f2;
+}
 
 .logo {
   display: block;
@@ -106,6 +110,10 @@ img {
 }
 .title--main {
   color: #ffffff;
+}
+.title--secondary {
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .subtitle {
@@ -130,6 +138,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
 }
 .main-header--underlined {
   border-bottom: 1px solid #d9d9d9;
@@ -141,7 +150,6 @@ img {
 
 .promo {
   background: linear-gradient(rgba(104, 183, 56, 0.85) 0 61%, #ffffff 61% 100%), url("../img/index-promo-bg-mobile.png");
-  background-color: #68b738;
   background-repeat: no-repeat;
   background-position: center, top center;
   background-size: cover, contain;
@@ -333,7 +341,7 @@ img {
   background-color: #f2f2f2;
 }
 
-.location {
+.location--index {
   background-color: #ffffff;
 }
 .location__text {
@@ -416,7 +424,7 @@ img {
 }
 
 .products {
-  padding-top: 27px;
+  padding: 27px 0 25px;
 }
 .products__title {
   margin-bottom: 41px;
@@ -426,15 +434,8 @@ img {
   display: flex;
   flex-direction: column;
 }
-.products__item {
-  border-bottom: 1px solid #ebebeb;
-}
 .products__button {
   grid-column: span 2;
-}
-
-.products__item:first-child {
-  border-top: 1px solid #ebebeb;
 }
 
 .product-card {
@@ -442,6 +443,7 @@ img {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 17px;
   padding: 20px 20px 25px;
+  border-bottom: 1px solid #ebebeb;
 }
 .product-card__button {
   grid-column: span 2;
@@ -450,18 +452,116 @@ img {
   text-decoration: none;
 }
 .product-card__title {
-  max-width: 76px;
+  width: 76px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
 }
-.product-card__description-list {
+.product-card__title--additional {
+  width: 100%;
+}
+.product-card__title--show-more {
+  width: 100%;
+  padding: 0 38px;
+  margin-bottom: 8px;
+}
+.product-card__description-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+}
+.product-card--show-more {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.product-card--show-more::before, .product-card--show-more::after {
+  content: "";
+  top: 34px;
+  left: 145px;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+}
+.product-card--show-more::before {
+  transform: rotate(90deg);
+}
+.product-card__text-wrapper {
+  margin-top: 53px;
+  text-align: center;
+}
+.product-card__info {
+  padding: 0 30px;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+}
+.product-card--without-picture {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 13px 0 19px;
+}
+.product-card--border-top {
+  border-top: 1px solid #ebebeb;
+}
+
+.additional-products__title {
+  margin-bottom: 36px;
+}
+.additional-products__list {
+  list-style-type: none;
+  margin-bottom: 35px;
+}
+.additional-products__item {
+  border-color: #cdcdcd;
+}
+.additional-products__gift {
+  margin-bottom: 35px;
+}
+
+.gift {
+  display: flex;
+  justify-content: center;
+  min-height: 290px;
+  padding-top: 187px;
+  padding-bottom: 43px;
+  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../img/catalog/bg-cat.jpg") right no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gift__text {
+  position: relative;
+  width: 161px;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+.gift__text::before {
+  content: "";
+  position: absolute;
+  bottom: 107px;
+  left: 40px;
+  width: 78px;
+  height: 80px;
+  background-image: url("../icons/catalog/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*# sourceMappingURL=style.css.map */
