@@ -55,8 +55,8 @@
   }
 
   &--show-more {
-    position: relative;
     @include flex-column;
+    position: relative;
     gap: 21px;
   }
 
