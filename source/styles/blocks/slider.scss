@@ -1,0 +1,6 @@
+.slider {
+
+  &__list {
+    @include list-reset;
+  }
+}

@@ -1,0 +1,16 @@
+.products {
+  padding: 27px 0 25px;
+
+  &__title {
+    margin-bottom: 41px;
+  }
+
+  &__list {
+    @include list-reset;
+    @include flex-column;
+  }
+
+  &__button {
+    grid-column: span 2;
+  }
+}
