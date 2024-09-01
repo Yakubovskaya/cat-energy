@@ -1,0 +1,19 @@
+.additional-products {
+
+  &__title {
+    margin-bottom: 36px;
+  }
+
+  &__list {
+    @include list-reset;
+    margin-bottom: 35px;
+  }
+
+  &__item {
+    border-color: $background-color-quaternary;
+  }
+
+  &__gift {
+    margin-bottom: 35px;
+  }
+}

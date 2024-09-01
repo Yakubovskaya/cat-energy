@@ -1,0 +1,21 @@
+.button {
+  padding: 10px 44px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  @include link-reset;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $background-color-secondary;
+  color: $text-color-secondary;
+  cursor: pointer;
+
+  &--secondary {
+    color: $text-color-tertiary;
+    background-color: $background-color-tertiary;
+  }
+}

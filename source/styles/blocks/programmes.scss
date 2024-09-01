@@ -1,0 +1,10 @@
+.programmes {
+  padding-bottom: 20px;
+  background-color: $background-color-primary;
+
+  &__list {
+    @include list-reset;
+    display: grid;
+    row-gap: 22px;
+  }
+}

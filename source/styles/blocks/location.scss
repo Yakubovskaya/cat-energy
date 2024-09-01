@@ -1,0 +1,29 @@
+.location {
+  &--light {
+    background-color: $background-color-primary;
+  }
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  &__invitation {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $text-color-invitation;
+  }
+
+  &__address {
+    font-family: $font-family-secondary;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    color: $text-color-tertiary;
+  }
+}
