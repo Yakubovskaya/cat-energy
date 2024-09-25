@@ -1,4 +1,5 @@
 .example {
+  @include container;
   padding-top: 25px;
   background-color: $background-color-tertiary;
 

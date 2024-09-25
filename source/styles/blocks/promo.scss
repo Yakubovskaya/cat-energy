@@ -1,8 +1,15 @@
 .promo {
-  background: linear-gradient($background-color-secondary-opacity 0 60%, $background-color-primary 60% 100%), url("../../images/promo-bg-mobile@2x.png"), linear-gradient($backgroung-color-promo-image 0 100%);
+  @include container;
+  background: linear-gradient($background-color-secondary-opacity 0 60%, $background-color-primary 60% 100%), url("../../images/promo-bg-mobile@1x.png"), linear-gradient($backgroung-color-promo-image 0 100%);
   background-repeat: no-repeat;
   background-position: center, top, center;
   background-size: cover, 320px auto, cover;
+
+  @media (min-resolution: 2dppx) {
+    .promo {
+      background: linear-gradient($background-color-secondary-opacity 0 60%, $background-color-primary 60% 100%), url("../../images/promo-bg-mobile@2x.png"), linear-gradient($backgroung-color-promo-image 0 100%);
+    }
+  }
 
   &__wrapper {
     @include flex-column-align;

@@ -1,8 +1,19 @@
 .products {
+  @include container;
   padding: 27px 0 25px;
+  background-color: $background-color-primary;
+
+  &__item {
+    border-bottom: 1px solid $background-color-product-line;
+  }
+
+  &__item:first-child {
+    border-top: 1px solid $background-color-product-line;
+  }
 
   &__title {
     margin-bottom: 41px;
+    padding: 0 20px;
   }
 
   &__list {

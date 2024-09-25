@@ -1,10 +1,12 @@
 .how-it-works {
+  @include container;
   padding-bottom: 49px;
   background-color: $background-color-primary;
 
   &__title {
     margin-bottom: 40px;
   }
+
   &__list {
     @include list-reset;
     display: grid;

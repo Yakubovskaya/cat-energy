@@ -4,10 +4,16 @@
   min-height: 290px;
   padding-top: 187px;
   padding-bottom: 43px;
-  background: linear-gradient($background-color-secondary-opacity 0%, $background-color-secondary-opacity 100%), url("../../images/gift-background@2x.jpg") right no-repeat;
+  background: linear-gradient($background-color-secondary-opacity 0%, $background-color-secondary-opacity 100%), url("../../images/catalog/gift-background@1x.jpg") right no-repeat;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    .gift {
+      background: linear-gradient($background-color-secondary-opacity 0%, $background-color-secondary-opacity 100%), url("../../images/catalog/gift-background@2x.jpg") right no-repeat;
+    }
+  }
 
   &__text {
     position: relative;
