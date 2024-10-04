@@ -1,23 +1,22 @@
-.socials {
-  &__list {
-    @include list-reset;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 132px;
-  }
-
-  &__link {
-    position: relative;
-    display: block;
-    min-width: 28px;
-    min-height: 22px;
-  }
-
-  &__icon {
-    position: absolute;
-    inset: 0;
-    margin: auto;
-  }
+.socials__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 132px;
 }
+
+.socials__link {
+  position: relative;
+  display: block;
+  min-width: 28px;
+  min-height: 22px;
+}
+
+.socials__icon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+

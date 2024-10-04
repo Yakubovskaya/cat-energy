@@ -1,4 +1,5 @@
 .button {
+  @include link-reset;
   padding: 10px 44px;
   font-family: inherit;
   font-weight: 400;
@@ -7,7 +8,6 @@
   appearance: none;
   border: 0;
   border-radius: 0;
-  @include link-reset;
   text-align: center;
   text-transform: uppercase;
   background-color: $background-color-secondary;

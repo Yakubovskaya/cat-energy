@@ -1,5 +1,19 @@
 .main-footer {
+  background-color: $background-color-tertiary;
+}
+
+.main-footer__wrapper {
   @include container;
-  padding: 0;
+}
+
+.main-footer__location {
+  width: 100%;
+
+  &--light {
+    background-color: $background-color-primary;
+  }
+}
+
+.main-footer__contacts {
   background-color: $background-color-tertiary;
 }

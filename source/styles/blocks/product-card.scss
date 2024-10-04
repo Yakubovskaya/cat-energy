@@ -4,76 +4,77 @@
   row-gap: 20px;
   padding: 22px 20px 24px;
 
-  &__image-link {
-    place-self: center;
-  }
-
-  &__button {
-    grid-column: span 2;
-  }
-
-  &__title-link {
-    @include link-reset;
-  }
-
-  &__title {
-    width: 76px;
-    margin-bottom: 14px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $text-color-products-name;
-  }
-
-  &__title--show-more {
-    width: 100%;
-    padding: 0 38px;
-    margin-bottom: 8px;
-  }
-
-  &__description-item {
-    @include flex-container(center, space-between);
-    font-family: $font-family-secondary;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: $text-color-tertiary;
-  }
-
   &--show-more {
     @include flex-column;
     position: relative;
     gap: 21px;
-  }
 
-  &--show-more::before,
-  &--show-more::after {
-    content: "";
-    top: 36px;
-    left: 145px;
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background-color: $background-color-plus;
-  }
+    &--show-more::before,
+    &--show-more::after {
+      content: "";
+      top: 36px;
+      left: 145px;
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: $background-color-plus;
+    }
 
-  &--show-more::before {
-    transform: rotate(90deg);
+    &--show-more::before {
+      transform: rotate(90deg);
+    }
   }
+}
 
-  &__text-wrapper {
-    margin-top: 53px;
-    text-align: center;
-  }
+.product-card__image-link {
+  place-self: center;
+}
 
-  &__info {
-    padding: 0 30px;
-    font-family: $font-family-secondary;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-    color: $text-color-tertiary;
+.product-card__button {
+  grid-column: span 2;
+}
+
+.product-card__title-link {
+  @include link-reset;
+}
+
+.product-card__title {
+  width: 76px;
+  margin-bottom: 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $text-color-products-name;
+
+  &--show-more {
+    width: 100%;
+    padding: 0 38px;
+    margin-bottom: 8px;
   }
+}
+
+.product-card__description-item {
+  @include flex-container(center, space-between);
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color-tertiary;
+}
+
+
+.product-card__text-wrapper {
+  margin-top: 53px;
+  text-align: center;
+}
+
+.product-card__info {
+  padding: 0 30px;
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $text-color-tertiary;
 }

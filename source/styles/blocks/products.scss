@@ -2,26 +2,27 @@
   @include container;
   padding: 27px 0 25px;
   background-color: $background-color-primary;
+}
 
-  &__item {
-    border-bottom: 1px solid $background-color-product-line;
-  }
+.products__item {
+  border-bottom: 1px solid $background-color-product-line;
 
-  &__item:first-child {
+  &:first-child {
     border-top: 1px solid $background-color-product-line;
   }
-
-  &__title {
-    margin-bottom: 41px;
-    padding: 0 20px;
-  }
-
-  &__list {
-    @include list-reset;
-    @include flex-column;
-  }
-
-  &__button {
-    grid-column: span 2;
-  }
 }
+
+.products__title {
+  margin-bottom: 41px;
+  padding: 0 20px;
+}
+
+.products__list {
+  @include list-reset;
+  @include flex-column;
+}
+
+.products__button {
+  grid-column: span 2;
+}
+
