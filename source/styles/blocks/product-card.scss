@@ -9,8 +9,8 @@
     position: relative;
     gap: 21px;
 
-    &--show-more::before,
-    &--show-more::after {
+    &::before,
+    &::after {
       content: "";
       top: 36px;
       left: 145px;
@@ -20,7 +20,7 @@
       background-color: $background-color-plus;
     }
 
-    &--show-more::before {
+    &::before {
       transform: rotate(90deg);
     }
   }
@@ -41,6 +41,7 @@
 .product-card__title {
   width: 76px;
   margin-bottom: 14px;
+  font-family: $font-family-secondary;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -56,7 +57,6 @@
 
 .product-card__description-item {
   @include flex-container(center, space-between);
-  font-family: $font-family-secondary;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -71,7 +71,6 @@
 
 .product-card__info {
   padding: 0 30px;
-  font-family: $font-family-secondary;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;

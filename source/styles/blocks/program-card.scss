@@ -6,6 +6,7 @@
 }
 
 .program-card__title {
+  font-family: $font-family-secondary;
   grid-column: 2;
   margin-bottom: 22px;
   font-weight: 400;
@@ -27,6 +28,7 @@
   position: relative;
   grid-column: span 2;
   display: block;
+  font-family: $font-family-secondary;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
